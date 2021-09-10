@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+    </style>
+
     <title>DevSchool</title>
 </head>
 
 <body>
     <div class="container">
         <div class="left-box">
-            <header class="header-left-box"></div>    
+            <header class="header-left-box">    
                 <div class="svg-livrinho"> <img src="assets/images/book.svg"/> </div>
-                <div class="title"> <span> Dev </span> School </div>
+                <div class="title"> <span>Dev</span>School</div>
             </header>
 
             <div class="black-space"></div>
             <div class="management">
-                <div class="name"> Gerenciamento </div>
+                <div> Gerenciamento </div>
                 <img src="assets/images/setinha pra baixo.svg"/>
             </div>
 
             <div class="espaco-alunos">
-                <div>Alunos</div>
+                <div> Alunos </div>
             </div>
         </div>
 
@@ -36,8 +41,8 @@
                 </div>
 
                 <div class="buttons-header">
-                    <div class="refresh-button"> <button> <img src="assets/images/atualizar.svg"/> </button> </div>
-                    <div class="logout"> <button> <img src="assets/images/log-out.svg"/> </button> </div>
+                    <div class="refresh-button"> <button> <img src="assets/images/atualizar.svg" alt=""/> </button> </div>
+                    <div class="logout"> <button> <img src="assets/images/log-out.svg" alt=""/> </button> </div>
                 </div>
             </div>
             <div class="bottom-bar-right-header"></div>
@@ -79,7 +84,94 @@
                 </div>
 
                 <div class="student-registered-box">
-                    <div class="row-bar"></div>
+                    <div class="row-bar">
+                        <div class="bar-new-student"></div>
+                        <div class="registered-students"> Alunos Matriculados </div>
+                    </div>
+
+                    <table class="table-user">
+                        <thead>
+                            <tr>
+                                <th> ID </th>
+                                <th> Nome </th>
+                                <th> Chamada </th>
+                                <th> Turma </th>
+                                <th> Curso </th>
+                                <th class="a"> </th>
+                                <th class="a"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="int">
+                                <td> 1 </td>
+                                <td> Antônio dos Santos </td>
+                                <td> 1 </td>
+                                <td> InfoA </td>
+                                <td> Informática </td>
+                                <td> <button> <img src="assets/images/button-editar.svg" /> </button> </td>
+                                <td> <button> <img src="assets/images/button-remover.svg" /> </button> </td>
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td> Caroline Gomes </td>
+                                <td> 2 </td>
+                                <td> InfoA </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 3 </td>
+                                <td> Gabrielle Oliveira </td>
+                                <td> 3 </td>
+                                <td> InfoB </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 4 </td>
+                                <td> Juliana Ferreira </td>
+                                <td> 4 </td>
+                                <td> InfoB </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 5 </td>
+                                <td> Luciana Camargo </td>
+                                <td> 5 </td>
+                                <td> InfoC </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 6 </td>
+                                <td> Renata Souza </td>
+                                <td> 6 </td>
+                                <td> InfoC </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 7 </td>
+                                <td> Ricardo Oliveira </td>
+                                <td> 7 </td>
+                                <td> InfoD </td>
+                                <td> Informática </td>
+                            </tr>
+
+                            <tr>
+                                <td> 8 </td>
+                                <td> Thiago Assunção </td>
+                                <td> 8 </td>
+                                <td> InfoD </td>
+                                <td> Informática </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
                 </div>
             </div>
         </div>

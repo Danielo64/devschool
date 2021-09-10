@@ -2,14 +2,14 @@ body {
     margin: 0px;
 }
 
-input, button {
-    outline: none;
-}
-
 * {
     box-sizing: border-box;
     cursor: default;
     font-family: 'Roboto';
+}
+
+input, button {
+    outline: none;
 }
 
 .container {
@@ -35,6 +35,10 @@ input, button {
     margin: 2em;
     align-items: center;
     justify-content: center;
+}
+
+img {
+    cursor: pointer;
 }
 
 .svg-livrinho {
@@ -110,6 +114,43 @@ input, button {
    justify-content: space-between;
 }
 
+.header {
+    margin-top: 0em;
+    padding-right: 0em;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 50%;
+}
+
+.user-image img {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    height: 57px;
+}
+
+.absolute {
+    color: white;
+    background-color: #DB21BD;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: .7em;
+}
+
 .user-name  {
     padding-left: 1em;
     font-size: 16px;
@@ -119,13 +160,14 @@ input, button {
     color: #4a4a4a;
 }
 
-.logout button {
-    border-radius: 50%;
-    background-color: #986CDF;
-    width: 44px;
-    height: 44px;
-    border: none;
-    margin: .4em;
+.buttons-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.buttons-header {
+    margin-right: 2em;
 }
 
 .refresh-button button {
@@ -137,16 +179,17 @@ input, button {
     margin: .4em;
 }
 
-.buttons-header {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em;
+.logout button {
+    border-radius: 50%;
+    background-color: #986CDF;
+    width: 44px;
+    height: 44px;
+    border: none;
+    margin: .4em;
 }
 
-.user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+button {
+    cursor: pointer;
 }
 
 .bottom-bar-right-header {
@@ -154,6 +197,19 @@ input, button {
     width: 97%;
     align-self: center;
     background-color: #e9e9e9;
+}
+
+.body-right-box {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F5F5F5;
+
+    height: 100%;
+    padding: 3em;
+    
+    margin-bottom: 0em;
+    margin-right: 0em;
 }
 
 .new-student-box {
@@ -165,21 +221,22 @@ input, button {
     padding: 2em;   
 }
 
-.bar-new-student {
-    border: 3px solid #986CDF;
-    border-radius: .5em;
-    margin-right: .4em;
-    background-color: #986CDF;
-}
-
 .text-new-student {
     display: flex;
     flex-direction: row;
 
     font-size: 32px;
 }
+
 .text-new-student div {
     font-weight: bolder;
+}
+
+.bar-new-student {
+    border: 3px solid #986CDF;
+    border-radius: .5em;
+    margin-right: .4em;
+    background-color: #986CDF;
 }
 
 .input-new-student {
@@ -188,38 +245,16 @@ input, button {
     padding-top: 2.4em;
 }
 
-.boxzinha-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.input {
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
 .input-left {
     display: flex;
     flex-direction: column;
     margin-right: 3em;
 }
 
-.input-right {
+.boxzinha-input {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-input {
-    width: 209px;
-    height: 36px;
-
-    background: #FFFFFF;
-    border: 1px solid #A8A8A8;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding-left: .5em;
+    flex-direction: row;
+    align-items: center;
 }
 
 .name-student {
@@ -237,11 +272,10 @@ input {
     font-weight: 800;
 }
 
-.class-student {
-    font-size: 18px;
-    color: #615858;
-    margin-right: 0.8em;
-    font-weight: 800;
+.input-right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
 
 .course-student {
@@ -251,6 +285,28 @@ input {
     font-weight: 800;
 }
 
+.class-student {
+    font-size: 18px;
+    color: #615858;
+    margin-right: 0.8em;
+    font-weight: 800;
+}
+
+input {
+    width: 209px;
+    height: 36px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: .5em;
+}
+
+.input {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
 
 .button-create {
     align-self: flex-end;
@@ -271,6 +327,11 @@ input {
     font-weight: bold;
 }
 
+.button-create button:hover {
+    background-color: #aa3997;
+    transition: 2s;
+}
+
 .student-registered-box {
     display: flex;
     flex-direction: column;
@@ -281,6 +342,12 @@ input {
     margin-top: 2em;
     
 }
+
+.row-bar {
+    display: flex;
+    flex-direction: row;
+}
+
 .registered-students {
     display: flex;
     flex-direction: row;
@@ -289,52 +356,36 @@ input {
     padding-left: .3em;
 }
 
-.row-bar {
-    display: flex;
-    flex-direction: row;
+table {
+    margin-top: 2em;
 }
 
-.body-right-box {
-    display: flex;
-    flex-direction: column;
-
-    background-color: #F5F5F5;
-
-    height: 100%;
-    padding: 3em;
-    
-    margin-bottom: 0em;
-    margin-right: 0em;
-}
-
-
-.header {
-    margin-top: 0em;
-    padding-right: 0em;
-}
-
-td button {
-    border-radius: 50%;
-    background-color: #565656;
-    border: none;
-    width: 31px;
-    height: 31px;
-}
- 
-.buttons-header {
-    margin-right: 2em;
+.table-user {
+    border-collapse: collapse;
 }
 
 thead {
     background-color: #986CDF;  
 }
 
-table {
-    margin-top: 2em;
+th {
+    height: 61.93px;
+    text-align: left;
+    padding: 1em;
+    color: #ffff;
+    font-weight: 800;
+}
+
+.a {
+    width: .1em;
 }
 
 tbody {
     background-color: #F5F5F5;
+}
+
+.int {
+    background-color: #fff;
 }
 
 td {
@@ -345,59 +396,10 @@ td {
     font-weight: 600;
 }
 
-th {
-    height: 61.93px;
-    text-align: left;
-    padding: 1em;
-    color: #ffff;
-    font-weight: 800;
-} 
-.table-user {
-    border-collapse: collapse;
-}
-.int {
-    background-color: #fff;
-}
-
-.a {
-    width: .1em;
-}
-
-button {
-    cursor: pointer;
-}
-
-.button-create button:hover {
-    background-color: #aa3997;
-    transition: 2s;
-}
-
-img {
-    cursor: pointer;
-}
-
-.absolute {
-    color: white;
-    background-color: #DB21BD;
-    border: 3px solid white;
+td button {
     border-radius: 50%;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    font-size: .7em;
-}
-
-.user-image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    border-radius: 50%;
-}
-
-.user-image img {
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-    height: 57px;
+    background-color: #565656;
+    border: none;
+    width: 31px;
+    height: 31px;
 }

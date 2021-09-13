@@ -19,6 +19,15 @@ app.post('/matricula', async (req, resp) => {
     try {
         let { nome, chamada, curso, turma } = req.body;
 
+        if (!{ nome } || { nome }.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Nome é obrigatório!' });
+        else if (!{ chamada } || { chamada }.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Chamada é obrigatória!' });
+        else if (!{ curso } || { curso }.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Curso é obrigatório' });
+        else if (!{ turma } || { turma }.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Turma é obrigatória' });
+
         let r = await db.tb_matricula.create(
         {
             nm_aluno: nome,

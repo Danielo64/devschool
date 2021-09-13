@@ -41,7 +41,7 @@ export default function Index() {
             let r = await api.inserir(nome, chamada, curso, turma);
 
             if (r.erro)
-                alert(r.erro);
+                toast.error(r.erro);
             else
                 toast.dark('💕 Aluno inserido!');
         } else {

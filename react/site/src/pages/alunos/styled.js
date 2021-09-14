@@ -70,7 +70,7 @@ img {
     font-size: 18px;
     color: #615858;
     width: 5.5em;
-    padding-left: 1em;
+    padding-left: 1.6em;
     font-weight: 800;
 }
 
